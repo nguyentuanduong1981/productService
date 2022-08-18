@@ -33,11 +33,11 @@ spec:
                   name : db-config
                   key :  dbName
 
-            - name: DB_productNAME  # Setting Database productname from Secret
+            - name: DB_USERNAME  # Setting Database username from Secret
               valueFrom :
                 secretKeyRef :
                   name : mysql-secrets
-                  key :  productname
+                  key :  username
 
             - name: DB_PASSWORD # Setting Database password from Secret
               valueFrom :
@@ -47,7 +47,7 @@ spec:
       volumes:
         - name: mysql-persistence-storage
           persistentVolumeClaim:
-            claimName: db-mysql-pvc
+            claimName: mysql-pv-claim
 
 ---
 

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.microservice.demo</groupId>
-	<artifactId>productservice</artifactId>
+	<artifactId>productService</artifactId>
 	<version>0.0.1</version>
-	<name>productservice</name>
-	<description>productservice</description>
+	<name>productService</name>
+	<description>productService</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.3</spring-cloud.version>
